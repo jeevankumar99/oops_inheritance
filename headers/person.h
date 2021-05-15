@@ -1,3 +1,6 @@
+
+// Definition of class Person.
+
 #include <iostream>
 #include <climits>
 

@@ -1,4 +1,6 @@
 
+// Definition of class Student.
+
 #include <iostream>
 #include <climits>
 #include "person.h"

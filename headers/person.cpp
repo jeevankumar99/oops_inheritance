@@ -1,4 +1,6 @@
 
+// Implementation of Person's members and functions
+
 #include "person.h"
 
 string Person::get_name()

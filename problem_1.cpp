@@ -1,11 +1,11 @@
 /*
 Store Student information using Inheritance
-Person - Parent/BaseClass
-Student - Child Class
+Parent class:
+->Person - headers/person.h and headers/person.cpp
+Child class:
+->Student - headers/student.h and headers/student.cpp
 */
 
-#include <iostream>
-#include <climits>
 #include "headers/student.h"
 
 using namespace std;

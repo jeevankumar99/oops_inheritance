@@ -1,4 +1,6 @@
 
+// Implementation of Student's members and functions.
+
 #include "student.h"
 
 string Student::get_college_name()
