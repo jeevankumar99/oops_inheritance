@@ -5,6 +5,7 @@ Student - Child Class
 */
 
 #include <iostream>
+#include <climits>
 
 using namespace std;
 
@@ -48,16 +49,19 @@ class Person
 
         void populate_person_data()
         {
-            string name_gender;
+            string name;
+            string gender;
             int age;
             
             cout << "Enter name: ";
-            cin >> name_gender;
-            put_name(name_gender);
+            // To ignore \n as input for the next getline
+            cin.ignore(INT_MAX, '\n');
+            getline(cin, name);
+            put_name(name);
             
             cout << "Enter Gender: ";
-            cin >> name_gender;
-            put_gender(name_gender);
+            getline(cin, gender);
+            put_gender(gender);
             
             cout << "Enter age: ";
             cin >> age;
@@ -117,11 +121,13 @@ class Student : public Person
             int semester;
             
             cout << "Enter College name: ";
-            cin >> college_department;
+            // to ignore \n as input for the next getline
+            cin.ignore(INT_MAX, '\n');
+            getline(cin, college_department);
             put_college_name(college_department);
             
             cout << "Enter Department: ";
-            cin >> college_department;
+            getline(cin, college_department);
             put_department(college_department);
             
             cout << "Enter Semester: ";
@@ -150,6 +156,7 @@ class Student : public Person
 };
 
 
+// Prints basic details as specified in the problem statement.
 void assignment()
 {
     cout << "\n\n------OOPS Assignemt 3 (Inheritance) --------" << endl;
@@ -160,8 +167,10 @@ void assignment()
 int main()
 {
     assignment();
+    
     int number_of_students;
     Student students[number_of_students];
+
     cout << "\n========= Student Information System ===========\n";
     cout << "Enter the number of students to enter their details: ";
     cin >> number_of_students;
