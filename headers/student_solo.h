@@ -14,9 +14,9 @@ class Student
         int semester;
     
     public:
-        string get_college_name();
-        string get_department();
-        int get_semester();
+        void print_college_name();
+        void print_department();
+        void print_semester();
 
         void put_college_name();
         void put_department();

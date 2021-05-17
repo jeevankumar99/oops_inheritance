@@ -3,19 +3,19 @@
 
 #include "student_solo.h"
 
-string Student::get_college_name()
+void Student::print_college_name()
 {
-    return college_name;
+    cout << "College Name: " << college_name << endl;
 }
 
-string Student::get_department()
+void Student::print_department()
 {
-    return department;
+    cout << "Department: " << department << endl;
 }
 
-int Student::get_semester()
+void Student::print_semester()
 {
-    return semester;
+    cout << "Semester: " << semester << endl;
 }
 
 void Student::put_college_name()
@@ -33,7 +33,7 @@ void Student::put_department()
 void Student::put_semester()
 {
     cout << "Enter Semester: ";
-    cin >> department;
+    cin >> semester;
 }
 
 void Student::populate_student_data()
@@ -48,8 +48,8 @@ void Student::populate_student_data()
 
 void Student::print_student_data() 
 {
-    cout << "College Name: " << get_college_name() << endl;
-    cout << "Department: " << get_department() << endl;
-    cout << "Semester: " << get_semester() << endl;
+    print_college_name();
+    print_department();
+    print_semester();
 }
 
