@@ -1,21 +1,21 @@
 
 // Implementation of Student's members and functions.
 
-#include "student.h"
+#include "student_solo.h"
 
-void Student::print_college_name()
+string Student::get_college_name()
 {
-    cout << "College Name: " << college_name << endl;
+    return college_name;
 }
 
-void Student::print_department()
+string Student::get_department()
 {
-    cout << "Department: " << department << endl;
+    return department;
 }
 
-void Student::print_semester()
+int Student::get_semester()
 {
-    cout << "Semester: " << semester << endl;
+    return semester;
 }
 
 void Student::put_college_name()
@@ -33,7 +33,7 @@ void Student::put_department()
 void Student::put_semester()
 {
     cout << "Enter Semester: ";
-    cin >> semester;
+    cin >> department;
 }
 
 void Student::populate_student_data()
@@ -48,19 +48,8 @@ void Student::populate_student_data()
 
 void Student::print_student_data() 
 {
-    print_college_name();
-    print_department();
-    print_semester();
+    cout << "College Name: " << get_college_name() << endl;
+    cout << "Department: " << get_department() << endl;
+    cout << "Semester: " << get_semester() << endl;
 }
 
-void Student::input_details()
-{
-    populate_person_data();
-    populate_student_data();
-}
-
-void Student::print_details()
-{
-    print_person_data();
-    print_student_data();
-}

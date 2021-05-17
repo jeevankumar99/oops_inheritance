@@ -14,13 +14,13 @@ class Person
         int age;
 
     public:
-        string get_name();
-        string get_gender();
-        int get_age();
+        void print_name();
+        void print_gender();
+        void print_age();
 
-        void put_name(string arg_name); 
-        void put_gender(string arg_gender);
-        void put_age(int arg_age);
+        void put_name(); 
+        void put_gender();
+        void put_age();
         
         void populate_person_data();
         void print_person_data();

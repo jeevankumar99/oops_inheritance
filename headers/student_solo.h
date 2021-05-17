@@ -1,13 +1,12 @@
 
-// Definition of class Student.
+// Definition of class Student as a base class.
 
 #include <iostream>
 #include <climits>
-#include "person.h"
 
 using namespace std;
 
-class Student : public Person 
+class Student
 {
     private:
         string college_name;
@@ -15,9 +14,9 @@ class Student : public Person
         int semester;
     
     public:
-        void print_college_name();
-        void print_department();
-        void print_semester();
+        string get_college_name();
+        string get_department();
+        int get_semester();
 
         void put_college_name();
         void put_department();
@@ -25,6 +24,4 @@ class Student : public Person
 
         void populate_student_data();
         void print_student_data();
-        void input_details();
-        void print_details();
 };

@@ -7,11 +7,9 @@ class Employee : public Student
         float salary;
 
     public:
-        float get_salary();
-
-        void put_salary(float salary);
+        void print_salary();
+        void put_salary();
 
         void populate_employee_details();
-
         void print_employee_details();
 };
