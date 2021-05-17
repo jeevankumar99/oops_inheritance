@@ -4,6 +4,8 @@
 #include "headers/person.h"
 #include "headers/assignment.h"
 
+
+// base class Person is a virtual class here.
 class InstagramUser : virtual public Person
 {
     private:
@@ -12,7 +14,7 @@ class InstagramUser : virtual public Person
     public:
         void get_instagram_username()
         {
-            cout << "Enter Instagram username: " << endl;
+            cout << "Enter Instagram username: ";
             getline(cin, instagram_username);
         }
 
@@ -26,6 +28,7 @@ class InstagramUser : virtual public Person
         {
             put_name();
             get_instagram_username();
+            get_followers();
         }
 
         void print_instagram_username()
@@ -35,6 +38,7 @@ class InstagramUser : virtual public Person
         }
 };
 
+// base class Person is a virtual class here
 class FacebookUser : virtual public Person
 {
     private:
@@ -43,7 +47,7 @@ class FacebookUser : virtual public Person
     public:
         void get_facebook_username()
         {
-            cout << "Enter Instagram username: " << endl;
+            cout << "Enter Facebook username: ";
             getline(cin, facebook_username);
         }
 
@@ -56,8 +60,11 @@ class FacebookUser : virtual public Person
         void get_facebook_details()
         {
             put_age();
+            // to ignore \n as input from the previous cin
+            cin.ignore(INT_MAX, '\n');
             put_gender();
             get_facebook_username();
+            get_friends();
         }
 
         void print_facebook_username()
@@ -76,12 +83,15 @@ class FacebookFamily : public InstagramUser, public FacebookUser
         {
             get_instagram_details();
             get_facebook_details();
+            // to ignore \n as input from the previous cin
+            cin.ignore(INT_MAX, '\n');
             cout << "Enter email id: ";
             getline(cin, email);
         }
 
         void print_details()
         {
+            cout << "\n Printing User Details" << endl;
             print_name();
             print_age();
             print_gender();
@@ -94,6 +104,7 @@ int main()
 {
     assignment(6);
 
+    cout << "Facebook User Details:-" << endl;
     FacebookFamily user;
     user.get_all_details();
     user.print_details();
