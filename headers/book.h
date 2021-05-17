@@ -3,7 +3,7 @@
 
 #include "publication.h"
 
-class Book : public Publication
+class Book : virtual public Publication
 {
     private:
         int page_count;

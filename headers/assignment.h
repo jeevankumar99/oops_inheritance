@@ -1,5 +1,6 @@
 
 #include <iostream>
+
 using namespace std;
 
 // Prints basic details as specified in the problem statement.
