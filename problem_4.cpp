@@ -38,7 +38,7 @@ class Employee : public Person, public Student
 
 int main()
 {
-    assignment();
+    assignment(4);
     
     int number_of_employees;
     Employee employees[number_of_employees];
@@ -64,7 +64,7 @@ int main()
         cout << "\n----Employee " << i + 1 << " ----" << endl;
         employees[i].print_data();
     }
-    
+
     return 0;
 }
 

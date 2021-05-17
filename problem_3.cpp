@@ -15,7 +15,7 @@ Derived classes:
 int main()
 {
 
-    assignment();
+    assignment(3);
 
     int number_of_books, number_of_tapes;
 

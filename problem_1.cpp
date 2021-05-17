@@ -12,7 +12,7 @@ Child class:
 
 int main()
 {
-    assignment();
+    assignment(1);
     
     int number_of_students;
     Student students[number_of_students];

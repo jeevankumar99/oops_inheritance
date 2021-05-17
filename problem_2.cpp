@@ -14,7 +14,7 @@ Sub Child class:
 
 int main()
 {
-    assignment();
+    assignment(2);
     
     int number_of_employees;
     Employee employees[number_of_employees];

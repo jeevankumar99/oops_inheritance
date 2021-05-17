@@ -111,7 +111,7 @@ class PANLink : public BankAccountDetails
 
 int main()
 {
-    assignment();
+    assignment(5);
 
     Customer customer;
     customer.input_details();
