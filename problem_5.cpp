@@ -2,6 +2,7 @@
 // Illustration of private and public classes
 
 #include <iostream>
+#include "headers/assignment.h"
 
 using namespace std;
 
@@ -110,6 +111,8 @@ class PANLink : public BankAccountDetails
 
 int main()
 {
+    assignment();
+
     Customer customer;
     customer.input_details();
 

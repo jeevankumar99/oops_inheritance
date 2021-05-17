@@ -64,8 +64,7 @@ int main()
         cout << "\n----Employee " << i + 1 << " ----" << endl;
         employees[i].print_data();
     }
-
+    
     return 0;
-
 }
 
