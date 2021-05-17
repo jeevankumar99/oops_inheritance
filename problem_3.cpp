@@ -10,9 +10,13 @@ Derived classes:
 
 #include "headers/book.h"
 #include "headers/tape.h"
+#include "headers/assignment.h"
 
 int main()
 {
+
+    assignment();
+
     int number_of_books, number_of_tapes;
 
     cout << "\n========= Books and Tapes Publication System ===========\n";

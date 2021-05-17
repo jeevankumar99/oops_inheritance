@@ -1,5 +1,6 @@
 #include "headers/person.h"
 #include "headers/student_solo.h"
+#include "headers/assignment.h"
 
 class Employee : public Person, public Student
 {
@@ -33,12 +34,6 @@ class Employee : public Person, public Student
         }
 };
 
-// Prints basic details as specified in the problem statement.
-void assignment()
-{
-    cout << "\n\n------OOPS Assignemt 3 (Inheritance) --------" << endl;
-    cout << "R Jeevan Kumar \t\t 1MS19ET042" << endl; 
-}
 
 
 int main()
